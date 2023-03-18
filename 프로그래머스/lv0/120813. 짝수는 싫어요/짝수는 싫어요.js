@@ -3,6 +3,6 @@ function solution(n) {
     for (let i = 1; i<=n; i+=2) {
         result.push(i);
     }
-    result.sort((a,b)=>a-b);
+    // result.sort((a,b)=>a-b);
     return result;
 }
