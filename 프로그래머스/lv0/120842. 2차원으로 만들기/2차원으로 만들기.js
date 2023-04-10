@@ -1,18 +1,14 @@
 function solution(num_list, n) {
-    let answer = [];
-    let currentArray = [];
+    let tempArr = [];
+    var answer = [];
     
-    for (let i = 0; i<num_list.length; i++) {
-        const item = num_list[i]
-        currentArray.push(item)
-        
-        if(currentArray.length === n) {
-            answer.push(currentArray);
-            currentArray = [];
+    for (let i of num_list) {
+        tempArr.push(i);
+        if(tempArr.length === n) {
+            answer.push(tempArr);
+            tempArr = [];
         }
-    };
-    
+    }
     
     return answer;
-    
 }
