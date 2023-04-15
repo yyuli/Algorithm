@@ -1,9 +1,9 @@
 function solution(order) {
     let answer = 0;
-    let stringNum = order.toString();
+    let str = order.toString();
     
-    for (let i = 0; i<stringNum.length; i++) {
-        if(stringNum[i] === "3" || stringNum[i] === "6" || stringNum[i] === "9") {
+    for (let i = 0; i<str.length; i++) {
+        if(str[i] === "3" || str[i] === "6" || str[i] === "9") {
             answer += 1;
         }
     }
