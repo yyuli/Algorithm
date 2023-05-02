@@ -1,14 +1,16 @@
 function solution(sides) {
+    sides.sort((a,b)=>b-a);
+    
+    const max = sides[0];
+    const min = sides[1];
+    
     let answer = 0;
     
-    sides.sort((a,b)=>b-a);
-    console.log(sides);
-    
-    for (let i = sides[0]; i>sides[0]-sides[1]; i--) {
+    for (let i = max; i>max-min; i--) {
         answer += 1;
     }
     
-    for (let i = sides[0]+1; i<sides[0]+sides[1]; i++) {
+    for (let i = max+1; i<max+min; i++) {
         answer += 1;
     }
     
