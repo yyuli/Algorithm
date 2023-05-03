@@ -1,17 +1,14 @@
 function solution(num, k) {
-    let answer = 0;
-    let cnt = 0;
-    const str = String(num);
+    let str = num.toString();
+    let strK = k.toString();
     
-    for (let i = 0; i<str.length; i++) {
-        const item = parseInt(str[i]);
-        if(item === k) {
-            answer = i+1;
-            break;
-        }else {
-            answer = -1;
+    if(!str.includes(strK)) {
+        return -1;
+    }else {
+        for (let i = 0; i<str.length; i++) {
+            if(str[i] === strK) {
+                return i+1;
+            }
         }
     }
-    
-    return answer;
 }
