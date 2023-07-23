@@ -1,5 +1,4 @@
-function solution(n)
-{
+function solution(n) {
     const str = n.toString();
     let answer = 0;
     
